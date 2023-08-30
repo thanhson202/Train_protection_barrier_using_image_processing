@@ -24,7 +24,7 @@ image_width, image_height = 250, 250
 model = tf.keras.models.load_model(model_path)
 
 # Chúng ta cần khai báo lại class_labels để tương ứng với số lớp
-class_labels = {0: "co_sung", 1: "co_tau"}
+class_labels = {0: "co_tau", 1: "khong_co_tau"}
 
 # Khởi tạo camera
 camera = cv2.VideoCapture(0)
@@ -68,7 +68,7 @@ while True:
 
     if predicted_class == 'co_tau':
         dong()
-    elif predicted_class == 'co_sung':
+    elif predicted_class == 'khong_co_tau':
         mo()
 
 # Giải phóng camera và đóng cửa sổ hiển thị

@@ -9,7 +9,7 @@ image_data_dir = "D:\CNN\pyimagesearch\input"
 
 # Cài đặt các thông số cho mô hình
 image_width, image_height = 250,250
-batch_size = 64
+batch_size = 16
 epochs = 15
 num_classes = 2
 

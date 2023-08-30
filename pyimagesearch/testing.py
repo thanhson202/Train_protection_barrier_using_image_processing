@@ -25,7 +25,7 @@ predictions = model.predict(image)
 predicted_class_index = np.argmax(predictions[0])
 
 # Chúng ta cần khai báo class_labels để tương ứng với số lớp
-class_labels = {0: "co_sung", 1: "co_tau"}
+class_labels = {0: "co_tau", 1: "khong_co_tau"}
 
 # In kết quả
 predicted_class = class_labels[predicted_class_index]
